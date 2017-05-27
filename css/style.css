@@ -1,0 +1,105 @@
+/*
+p {
+    display: inline;
+    font-size: 2em;
+    color: #fff;
+    width: 600px;
+    margin-top: 60px;
+}
+
+p:nth-child(odd){
+    background-color: blue;
+}
+
+p:nth-child(even){
+    background-color: orange;
+}
+
+p:nth-child(1n+3){
+    display: block;
+}
+*/
+
+a {
+    
+    width:  200px;
+    height: 200px;
+    background-color: orange;
+    color: blue;
+    font-size: 1.2em;
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+    line-height: 200px;
+    
+}
+
+img {
+    float: right;
+}
+
+
+p:nth-child(3){
+/*    clear: both; */
+}
+
+#borat {
+    height: 100px;
+    width: 100px;
+    float: none;
+    margin-bottom: 300px;
+    display: inline-block;
+/*    transition-property: height;
+    transition-duration: 5s;
+    transition-timing-function: linear;
+    transition-delay: 0.5; */
+
+
+    transition: width 5s linear 0.5s, height 2s linear 0.5s;
+}
+
+
+#borat:hover {
+    height: 200px;
+    width: 200px;
+}
+
+
+#background {
+    height: 50vh;
+    background-color: aquamarine;
+    /*background-image: url(https://68.media.tumblr.com/avatar_42fe370ca389_128.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover; */
+    background: url(https://68.media.tumblr.com/avatar_42fe370ca389_128.png); 
+    background-size: cover;
+    background-position: center;
+}
+
+
+#overflow p{
+    width: 25%;
+    float: left;
+}
+
+#overflow p:nth-child(even) {
+    background: antiquewhite;
+}
+
+#overflow p:nth-child(odd) {
+    background: cyan;
+}
+
+#overflow p:nth-child(2) {
+    overflow: hidden;
+}
+
+#overflow p:nth-child(3) {
+    overflow: scroll;
+}
+
+#overflow p:nth-child(4) {
+    overflow: auto;
+}
+
